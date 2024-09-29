@@ -94,7 +94,7 @@ print(len(duration))
 # Extraindo os dados da tag span com as avaliações dos filmes
 avaliacoes = soup.findAll('span', attrs = {'class':'ipc-rating-star ipc-rating-star--base ipc-rating-star--imdb ratingGroup--imdb-rating'})
 
-# List comprehension para extrair o texto
+# List comprehension para extrair o texto porque tem a estrela também e não vamos utilizar
 avaliacoes = [aval.text for aval in avaliacoes]
 print("avaliacoes")
 print(avaliacoes)
